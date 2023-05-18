@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+
+
+.item {
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+        body {
+
+            background-image: url("https://res.cloudinary.com/enchanting/f_auto,q_100,w_1600,h_700,c_fill/et-web/2020/11/Switzerland-Engelberg-Shonegg-lake-with-alps.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <header class="text-center">
+                    <h1 style="padding: 50px 50px; color: black;">Track Your Expenses</h1>
+                </header>
+                <form id="addform" class="row gx-3 gy-2 align-items-center py-3 px-5">
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">Rs</div>
+                            <input type="text" class="form-control" id="amount"
+                                placeholder="Amount in Rs">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                        <select class="form-select" id="category" aria-label="Default select example">
+                            <option selected disabled value="">Choose Category.....</option>
+                            <option value="1">For Movie</option>
+                            <option value="2">For Travel</option>
+                            <option value="3">On Girlfriend</option>
+                            <option value="4">On Boyfriend</option>
+                            <option value="5">On Friend</option>
+                        </select>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="col-auto"></div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                </form>
+                <ul id="users"></ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="singh.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
